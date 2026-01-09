@@ -1,0 +1,38 @@
+export const applications = [
+  {
+    id: 1,
+    name: "realtime-marketplace.app",
+    type: "E-Commerce Platform",
+    desc: "Real-time bidding marketplace with WebSocket integration, processing 10k+ concurrent users",
+    stack: ["React", "Node.js", "MongoDB", "Socket.io", "Redis"],
+    status: "production",
+    uptime: "99.9%",
+  },
+  {
+    id: 2,
+    name: "analytics-dashboard.app",
+    type: "Data Visualization",
+    desc: "Enterprise analytics platform with custom charting engine and ML-powered insights",
+    stack: ["Next.js", "Express", "PostgreSQL", "D3.js", "Python"],
+    status: "production",
+    uptime: "99.8%",
+  },
+  {
+    id: 3,
+    name: "collab-workspace.app",
+    type: "SaaS Platform",
+    desc: "Real-time collaborative workspace with video chat, file sharing, and task management",
+    stack: ["React", "Node.js", "MongoDB", "WebRTC", "AWS"],
+    status: "production",
+    uptime: "99.7%",
+  },
+  {
+    id: 4,
+    name: "api-gateway.service",
+    type: "Microservices",
+    desc: "High-performance API gateway handling 1M+ requests/day with auto-scaling",
+    stack: ["Node.js", "Redis", "Docker", "Kubernetes", "GraphQL"],
+    status: "production",
+    uptime: "99.9%",
+  },
+];

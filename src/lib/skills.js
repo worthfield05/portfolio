@@ -1,0 +1,45 @@
+export const skills = [
+  {
+    name: "React Runtime",
+    load: 95,
+    memory: 1.2,
+    state: "active",
+    color: "cyan",
+  },
+  {
+    name: "Node.js Server",
+    load: 88,
+    memory: 2.1,
+    state: "active",
+    color: "green",
+  },
+  {
+    name: "MongoDB Engine",
+    load: 76,
+    memory: 1.8,
+    state: "active",
+    color: "green",
+  },
+  {
+    name: "Express Router",
+    load: 82,
+    memory: 0.9,
+    state: "active",
+    color: "cyan",
+  },
+  { name: "Tailwind", load: 70, memory: 0.6, state: "active", color: "cyan" },
+  {
+    name: "State Manager",
+    load: 65,
+    memory: 0.8,
+    state: "active",
+    color: "magenta",
+  },
+  {
+    name: "Data Structure & Algorithms",
+    load: 50,
+    memory: 1.1,
+    state: "active",
+    color: "cyan",
+  },
+];
