@@ -1,7 +1,20 @@
-import { Circle, Cpu, MemoryStick, Network, Wifi, Zap } from "lucide-react";
-import React from "react";
+import { Circle, Cpu, MemoryStick, Wifi } from "lucide-react";
+import React, { useEffect, useState } from "react";
 
-const Header = ({ scrollProgress }) => {
+const Header = () => {
+  const [scrollProgress, setScrollProgress] = useState(0);
+  const handleScroll = () => {
+    const totalHeight =
+      document.documentElement.scrollHeight - window.innerHeight;
+    setScrollProgress((window.pageYOffset / totalHeight) * 100);
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div className="fixed top-0 left-0 right-0 z-40 bg-zinc-900/80 backdrop-blur-xl border-b border-zinc-800">
       <div className="flex items-center justify-between px-6 py-3">
@@ -30,7 +43,7 @@ const Header = ({ scrollProgress }) => {
       </div>
       <div className="h-0.5 bg-zinc-800">
         <div
-          className="h-full bg-gradient-to-r from-cyan-500 via-magenta-500 to-cyan-500 transition-all duration-300"
+          className="h-full bg-linear-to-r from-cyan-500 via-magenta-500 to-cyan-500 transition-all duration-300"
           style={{ width: `${scrollProgress}%` }}
         />
       </div>
